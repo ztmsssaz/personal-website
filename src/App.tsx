@@ -1,26 +1,38 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {useEffect, useState} from 'react'
+import Layout from './layout'
+import Home from './components/sections/home/home'
+import AboutMe from './components/sections/about-me/aboutMe'
+import Projects from './components/sections/projects/projects'
 
 function App() {
+  const [aboutAnimate, setAboutAnimate] = useState(false)
+
+  useEffect(() => {
+    if (localStorage.theme && localStorage.theme === 'dark') {
+      document.documentElement.classList.add('dark')
+    } else {
+      document.documentElement.classList.remove('dark')
+    }
+  }, [])
+  window.addEventListener('scroll', function () {
+    const aboutMe: any = document.querySelector('#aboutMe')
+    const home: any = document.querySelector('#home')
+    const aboutEl: any = aboutMe.getBoundingClientRect()
+
+    if (aboutEl.top < window.innerHeight && aboutEl.bottom >= 0) {
+      if (!aboutAnimate) {
+        setAboutAnimate(true)
+      }
+    }
+  })
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Layout>
+      <Home />
+      <AboutMe animate={aboutAnimate} />
+      <Projects />
+    </Layout>
+  )
 }
 
-export default App;
+export default App
