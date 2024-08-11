@@ -34,4 +34,9 @@ h{
     font-size: 10px;
   }
 }
+
+.arrows::before{
+  font-size: 30px;
+  color: #11c84f;
+}
 `

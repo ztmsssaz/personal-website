@@ -50,13 +50,13 @@ function AboutMe({animate}: any) {
           <BorderBox value='Axios' />
           <BorderBox value='Docker' />
           <BorderBox value='Routing' />
-          <BorderBox value='Trello' />
-          <BorderBox value='Figma' />
           <BorderBox value='Styled-components' />
           <BorderBox value='React Hook Form' />
           <BorderBox value='Formik (Yup)' />
-          <BorderBox value='Aglile Methodologie' />
           <BorderBox value='Git (Github Action)' />
+          <BorderBox value='Figma' />
+          <BorderBox value='Aglile Methodologie' />
+          <BorderBox value='Trello' />
         </div>
         <div className='text-center mx-auto max-w-[90%] mt-16 animate__animated animate__fadeInDown animate__slowe'>
           <a
