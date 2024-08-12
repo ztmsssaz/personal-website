@@ -19,7 +19,14 @@ module.exports = {
     },
     extend: {
       colors: {
-        dark: '#100e17',
+        dark: {
+          100: '#1a1726',
+          200: '#100e17',
+        },
+        customGreen: {
+          100: '#65d753',
+          200: '#55c943',
+        },
       },
     },
   },

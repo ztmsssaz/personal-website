@@ -1,20 +1,20 @@
-import ImageSlider from '../../imageSlider/slider'
 import Modal from '../../modal'
+import ImageSlider from '../../imageSlider/slider'
 
-function CoachModal({show, setShow}) {
+function AthleteModal({show, setShow}) {
   const imagesAddress = [
-    './assets/cv/antus/coach/home.png',
-    './assets/cv/antus/coach/dashboard.png',
-    './assets/cv/antus/coach/calendar.png',
-    './assets/cv/antus/coach/movement.png',
-    './assets/cv/antus/coach/muscles.png',
-    './assets/cv/antus/coach/uploads.png',
+    './assets/cv/antus/splash.png',
+    './assets/cv/antus/home.png',
+    './assets/cv/antus/user-info.png',
+    './assets/cv/antus/gym.png',
+    './assets/cv/antus/more.png',
+    './assets/cv/antus/books.png',
   ]
 
   return (
     <Modal show={show} setShow={setShow}>
       <div className='min-h-[50vh] max-h-[90vh] py-4'>
-        <h3 className='font-bold border-b border-gray-100 max-w-[90%] pb-1'>* Antus Coach App</h3>
+        <h3 className='font-bold border-b border-gray-100 max-w-[90%] pb-1'>* Antus Athlete App</h3>
         <p className='mt-2 p-2'>
           Zamir is an innovative, multi-lingual, international website designed to address the urgent needs of
           individuals seeking mental health support. Developed using Next.js and adorned with Tailwind CSS, it offers a
@@ -45,4 +45,4 @@ function CoachModal({show, setShow}) {
   )
 }
 
-export default CoachModal
+export default AthleteModal

@@ -5,6 +5,9 @@ export const GlobalStyle = createGlobalStyle`
   font-family: 'lato-bla';
   font-weight: normal;
 }
+.flex-i{
+  display: flex !important;
+}
 .maskProfile{
     height: 100%;
     width: 100%;
@@ -39,4 +42,22 @@ h{
   font-size: 30px;
   color: #11c84f;
 }
+.modal-dialog, html{
+  &::-webkit-scrollbar {
+      width: 10px;
+      border-radius: 50px;
+    }
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: #fcfcfc;
+      border-radius: 50px;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: #84cc16;
+      border-radius: 50px;
+    }
+}
+
 `

@@ -2,7 +2,7 @@ import BorderBox from '../../border-box'
 
 function AboutMe({animate}: any) {
   return (
-    <div className='relative border-t border-lime-500 text-dark dark:text-white dark:bg-dark dar'>
+    <div className='relative border-t border-lime-500 text-dark-200 dark:text-white dark:bg-dark-200 dar'>
       <div className='relative sm:top-[80px] container min-h-screen md:min-h-[90vh] pb-12 md:pb-0 mx-auto'>
         <div className={`flex flex-col sm:flex-row py-10 items-center ${!animate ? 'invisible' : 'visible'}`}>
           <div className='w-8/12 md:w-4/12'>

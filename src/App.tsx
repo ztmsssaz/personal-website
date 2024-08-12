@@ -2,7 +2,7 @@ import {useEffect, useState} from 'react'
 import Layout from './layout'
 import Home from './components/sections/home/home'
 import AboutMe from './components/sections/about-me/aboutMe'
-import Projects from './components/sections/projects/projects'
+import Projects from './components/sections/projects'
 
 function App() {
   const [aboutAnimate, setAboutAnimate] = useState(false)

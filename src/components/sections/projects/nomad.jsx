@@ -1,15 +1,8 @@
 import ImageSlider from '../../imageSlider/slider'
 import Modal from '../../modal'
 
-function CoachModal({show, setShow}) {
-  const imagesAddress = [
-    './assets/cv/antus/coach/home.png',
-    './assets/cv/antus/coach/dashboard.png',
-    './assets/cv/antus/coach/calendar.png',
-    './assets/cv/antus/coach/movement.png',
-    './assets/cv/antus/coach/muscles.png',
-    './assets/cv/antus/coach/uploads.png',
-  ]
+function NomadModal({show, setShow}) {
+  const imagesAddress = ['./assets/cv/nomad/screen1.jpg', './assets/cv/nomad/screen2.jpg']
 
   return (
     <Modal show={show} setShow={setShow}>
@@ -38,11 +31,11 @@ function CoachModal({show, setShow}) {
         </div>
         <div className=''>
           <h3 className='py-2'>Screenshots</h3>
-          <ImageSlider images={imagesAddress} />
+          <ImageSlider slides={1} center={false} images={imagesAddress} />
         </div>
       </div>
     </Modal>
   )
 }
 
-export default CoachModal
+export default NomadModal

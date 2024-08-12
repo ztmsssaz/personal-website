@@ -1,6 +1,4 @@
 import {Style} from './style'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
 
 function Modal({children, show, setShow}: any) {
   return (
@@ -14,9 +12,9 @@ function Modal({children, show, setShow}: any) {
         ></div>
       }
       <div
-        className={`modal-dialog block overflow-y-scroll overflow-x-hidden fixed top-1/2 left-1/2 translate-x-[-50%]${
-          show ? ' show ' : ''
-        } z-10 bg-white w-11/12 sm:w-10/12 rounded-md`}
+        className={`modal-dialog min-h-[90vh] block overflow-y-scroll overflow-x-hidden 
+        fixed top-1/2 left-1/2 translate-x-[-50%] z-10 bg-dark-200 text-white border border-lime-500 w-11/12 sm:w-10/12 rounded-lg
+        ${show ? ' show ' : ''}`}
       >
         <div className='relative flex'>
           <div
