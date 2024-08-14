@@ -1,3 +1,5 @@
+import BorderBox from '../../border-box'
+import {Danger} from '../../icons/icons'
 import ImageSlider from '../../imageSlider/slider'
 import Modal from '../../modal'
 
@@ -5,6 +7,7 @@ function CoachModal({show, setShow}) {
   const imagesAddress = [
     './assets/cv/antus/coach/home.png',
     './assets/cv/antus/coach/dashboard.png',
+    './assets/cv/antus/direct.png',
     './assets/cv/antus/coach/calendar.png',
     './assets/cv/antus/coach/movement.png',
     './assets/cv/antus/coach/muscles.png',
@@ -27,14 +30,38 @@ function CoachModal({show, setShow}) {
         </p>
         {/* notic */}
         <div className='bg-gray-800 rounded-md p-2 my-2'>
-          <div className='border-b border-gray-400'>
-            <h3 className='font-bold'>Notice:</h3>
+          <div className='border-b my-2 border-gray-400'>
+            <h3 className='font-bold flex items-center mb-2'>
+              <span>
+                <Danger color='orange' size='30' className='mr-2' />
+              </span>
+              Notice:
+            </h3>
           </div>
           <p>
-            This project had 73 endpoints and 46 pages. Adding pages due to the business owner‘s requests is not
-            possible. If you are interested in collaborating, an overview of the project will be provided to you. Some
-            of the pages are shown below.
+            This project had 48 endpoints and pages. Adding pages due to the business owner‘s requests is not possible.
+            If you are interested in collaborating, an overview of the project will be provided to you. Some of the
+            pages are shown below.
           </p>
+        </div>
+        <div>
+          <h3>Tools Used:</h3>
+          <div className={`flex justify-start flex-wrap`}>
+            <BorderBox value='Javascript' />
+            <BorderBox value='React' />
+            <BorderBox value='Bootstrap' />
+            <BorderBox value='React Context' />
+            <BorderBox value='Socket.io' />
+            <BorderBox value='Axios' />
+            <BorderBox value='React Router Dom' />
+            <BorderBox value='Styled components' />
+            <BorderBox value='Formik (Yup)' />
+            <BorderBox value='PWA' />
+            <BorderBox value='OTP' />
+            <BorderBox value='Git' />
+            <BorderBox value='Aglile Methodologie' />
+            <BorderBox value='Trello' />
+          </div>
         </div>
         <div className=''>
           <h3 className='py-2'>Screenshots</h3>

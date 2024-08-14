@@ -1,4 +1,4 @@
-import {Location, Mail, Phone} from '../../icons/icons'
+import {Github, Linkedin, Location, Mail, Phone} from '../../icons/icons'
 import {Style} from './style'
 
 function Home() {

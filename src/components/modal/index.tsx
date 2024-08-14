@@ -23,7 +23,7 @@ function Modal({children, show, setShow}: any) {
               setShow(false)
             }}
           >
-            <button className='border rounded-lg py-2 px-3 bg-red-500 hover:bg-slate-400 text-white'> Close</button>
+            <button className='border rounded-lg py-1 px-2 bg-red-500 hover:bg-slate-400 text-white'> Close</button>
           </div>
           <div className='container relative'>
             <div>{children}</div>

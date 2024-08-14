@@ -70,8 +70,8 @@ function ImageSlider({images = [], slides = 3, center = true}) {
   }
   return (
     <Slider {...settings}>
-      {images.map((item) => (
-        <div className='pr-1 outline-none cursor-move flex-i justify-center'>
+      {images.map((item, id) => (
+        <div className='pr-1 outline-none cursor-move flex-i justify-center' key={id}>
           <img className='rounded-xl border sm:max-h-[80vh]' src={item} alt='antus coach' />
         </div>
       ))}

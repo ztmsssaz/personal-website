@@ -8,7 +8,6 @@ function Layout({children}) {
       <GlobalStyle />
       <Header />
       <main>{children}</main>
-      <footer>footer</footer>
     </div>
   )
 }

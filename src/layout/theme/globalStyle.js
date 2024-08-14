@@ -44,7 +44,7 @@ h{
 }
 .modal-dialog, html{
   &::-webkit-scrollbar {
-      width: 10px;
+      width: 5px;
       border-radius: 50px;
     }
     /* Track */
