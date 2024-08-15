@@ -1,4 +1,4 @@
-import {Github, Linkedin, Location, Mail, Phone} from '../../icons/icons'
+import {Location, Mail, Phone} from '../../icons/icons'
 import {Style} from './style'
 
 function Home() {
@@ -34,8 +34,8 @@ function Home() {
                   </div>
                 </div>
               </div>
-              <div className='w-3/6 sm:w-1/4'>
-                <div className='maskProfile bg-slate-50 mb-12 sm:m-0 animate__animated animate__fadeInRight animate__slow'>
+              <div className='w-3/6 sm:w-1/4 z-30'>
+                <div className='maskProfile bg-slate-50 mb-12 sm:m-0 animate__animated animate__fadeInLeft'>
                   <img
                     className='duration-700 hover:scale-110'
                     src='./assets/images/profile-2.jpg'
