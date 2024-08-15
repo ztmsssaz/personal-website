@@ -5,7 +5,7 @@ function Home() {
   return (
     <Style>
       <div id='home' className='h-screen bgHome relative'>
-        <div className='absolute top-0 left-0 h-full w-full bg-black opacity-85'></div>
+        <div className='absolute top-0 left-0 h-full w-full dark:bg-black bg-gray-900 duration-100 opacity-85'></div>
         <div className='absolute w-full top-[50%] translate-y-[-50%] text-fuchsia-50'>
           <div className='container mx-auto'>
             <div className='flex justify-center items-center flex-col-reverse sm:flex-row'>

@@ -22,7 +22,10 @@ function Projects({animate}: any) {
 
   return (
     <Style>
-      <div id='projects' className='min-h-screen bg-emerald-950 border-t border-lime-500 relative py-2'>
+      <div
+        id='projects'
+        className='min-h-screen dark:before:opacity-50 before:opacity-20 dark:bg-emerald-950 border-t border-lime-500 relative py-2'
+      >
         <div className='container'>
           <h2
             className={`text-center font-bold p-10 text-dark-200 dark:text-white ${
@@ -33,11 +36,11 @@ function Projects({animate}: any) {
           </h2>
           <div className='flex justify-around flex-wrap text-dark-200 dark:text-white'>
             {/* coach */}
-            <div className='box w-full sm:w-5/12 md:w-[49%] xl:w-[44%] bg-dark-200 hover:bg-dark-100 duration-300 border border-lime-500 rounded-lg p-3 my-4'>
+            <div className='box w-full sm:w-5/12 md:w-[49%] xl:w-[44%] bg-white hover:bg-gray-100 dark:bg-dark-200 dark:hover:bg-dark-100 duration-300 border border-lime-500 rounded-lg p-3 my-4'>
               <div className='cursor-pointer m-2' onClick={() => setCoachModal(true)}>
-                <div className=' flex justify-between items-center'>
+                <div className='flex justify-between items-center'>
                   <h3 className='font-bold'> Antus Coach App (PWA)</h3>
-                  <button className='text-sm border border-lime-500 hover:bg-lime-500 rounded-md py-1 px-2 ml-4'>
+                  <button className='text-sm border border-lime-500 hover:bg-lime-500 hover:text-white rounded-md py-1 px-2 ml-4'>
                     show more
                   </button>
                 </div>
@@ -61,11 +64,11 @@ function Projects({animate}: any) {
               </div>
             </div>
             {/* athlete */}
-            <div className='box w-full sm:w-5/12 md:w-[49%] xl:w-[44%] bg-dark-200 hover:bg-dark-100 border border-lime-500 rounded-lg p-3 my-4'>
+            <div className='box w-full sm:w-5/12 md:w-[49%] xl:w-[44%] bg-white hover:bg-gray-100 dark:bg-dark-200 dark:hover:bg-dark-100 border border-lime-500 rounded-lg p-3 my-4'>
               <div className='cursor-pointer m-2' onClick={() => setAthleteModal(true)}>
                 <div className=' flex justify-between items-center'>
                   <h3 className='font-bold'> Antus Athlete App (PWA)</h3>
-                  <button className='text-sm border border-lime-500 hover:bg-lime-500 rounded-md py-1 px-2 ml-4'>
+                  <button className='text-sm border border-lime-500 hover:bg-lime-500 hover:text-white  rounded-md py-1 px-2 ml-4'>
                     show more
                   </button>
                 </div>
@@ -83,11 +86,13 @@ function Projects({animate}: any) {
               </div>
             </div>
             {/* nomad */}
-            <div className='box w-full sm:w-6/12 bg-dark-200 hover:bg-dark-100 border border-lime-500 rounded-lg p-3 my-4'>
+            <div className='box w-full sm:w-6/12 bg-white hover:bg-gray-100 dark:bg-dark-200 dark:hover:bg-dark-100 border border-lime-500 rounded-lg p-3 my-4'>
               <div className='cursor-pointer m-2' onClick={() => setNomadModal(true)}>
                 <div className=' flex justify-between items-center'>
                   <h3 className='font-bold'>The water supply system of the nomads </h3>
-                  <button className='text-sm border border-lime-500 hover:bg-lime-500 rounded-md p-1'>show more</button>
+                  <button className='text-sm border border-lime-500 hover:bg-lime-500 hover:text-white rounded-md p-1'>
+                    show more
+                  </button>
                 </div>
                 <div className='text-sm py-2'>
                   <b>Technologies:</b> <span>Reactjs, </span> <span> Typescript, </span> <span>Bootstrap5...</span>

@@ -15,7 +15,7 @@ function NomadModal({show, setShow}) {
           allows the user to work with the system through a mobile phone.
         </p>
         {/* notic */}
-        <div className='bg-gray-800 rounded-md p-2 my-2'>
+        <div className='bg-gray-100 dark:bg-gray-800 rounded-md p-2 my-2'>
           <div className='border-b my-2 border-gray-400'>
             <h3 className='font-bold flex items-center mb-2'>
               <span>

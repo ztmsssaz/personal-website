@@ -2,8 +2,8 @@ import BorderBox from '../../border-box'
 
 function AboutMe({animate}: any) {
   return (
-    <div className='relative border-t border-lime-500 text-dark-200 dark:text-white dark:bg-dark-200 dar'>
-      <div className='relative sm:top-[80px] container min-h-screen md:min-h-[90vh] pb-12 md:pb-0 mx-auto'>
+    <div className='relative border-t border-lime-500 text-dark-200 dark:text-white dark:bg-dark-200 pb-10 xl:pb-5'>
+      <div className='relative  lg:top-[80px] container min-h-screen md:pb-0 mx-auto'>
         <div className={`flex flex-col sm:flex-row py-10 items-center ${!animate ? 'invisible' : 'visible'}`}>
           <div className='w-8/12 md:w-4/12'>
             <div className='py-4 md:max-w-[60%] mx-auto'>
@@ -58,9 +58,9 @@ function AboutMe({animate}: any) {
           <BorderBox value='Aglile Methodologie' />
           <BorderBox value='Trello' />
         </div>
-        <div className='text-center mx-auto max-w-[90%] mt-16 animate__animated animate__fadeInDown animate__slowe'>
+        <div className='text-center mx-auto max-w-[90%] mt-12 animate__animated animate__fadeInDown animate__slow'>
           <a
-            className='bg-lime-600 hover:bg-lime-800 transition rounded-md p-5 py-2'
+            className='bg-lime-600 hover:bg-lime-800 text-white transition rounded-md px-5 py-2'
             href='./assets/cv/Abolfazl-Zarei-f-last-kh03.pdf'
           >
             Download CV

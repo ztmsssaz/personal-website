@@ -17,7 +17,7 @@ function CoachModal({show, setShow}) {
   return (
     <Modal show={show} setShow={setShow}>
       <div className='min-h-[50vh] max-h-[90vh] py-4'>
-        <h3 className='font-bold border-b border-gray-100 max-w-[90%] pb-1'>* Antus Coach App</h3>
+        <h3 className='font-bold border-b border-gray-100 max-w-[90%] pb-1'>Antus Coach App</h3>
         <p className='mt-2 p-2'>
           Zamir is an innovative, multi-lingual, international website designed to address the urgent needs of
           individuals seeking mental health support. Developed using Next.js and adorned with Tailwind CSS, it offers a
@@ -29,7 +29,7 @@ function CoachModal({show, setShow}) {
           preferred language.
         </p>
         {/* notic */}
-        <div className='bg-gray-800 rounded-md p-2 my-2'>
+        <div className='bg-gray-100 dark:bg-gray-800 rounded-md p-2 my-2'>
           <div className='border-b my-2 border-gray-400'>
             <h3 className='font-bold flex items-center mb-2'>
               <span>

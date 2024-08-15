@@ -17,7 +17,7 @@ function AthleteModal({show, setShow}) {
   return (
     <Modal show={show} setShow={setShow}>
       <div className='min-h-[50vh] max-h-[90vh] py-4'>
-        <h3 className='font-bold border-b border-gray-100 max-w-[90%] pb-1'>* Antus Athlete App</h3>
+        <h3 className='font-bold border-b border-gray-100 max-w-[90%] pb-1'>Antus Athlete App</h3>
         <p className='leading-7 mt-2 p-2'>
           Antus is a progressive web application designed to meet the needs of people looking to improve their physical
           health. Developed using Angular 10 and TypeScript and adorned with Bootstrap 5, it offers a seamless and
@@ -27,7 +27,7 @@ function AthleteModal({show, setShow}) {
           training and meal plans.
         </p>
         {/* notic */}
-        <div className='bg-gray-800 rounded-md p-2 my-2'>
+        <div className='bg-gray-100 dark:bg-gray-800 rounded-md p-2 my-2'>
           <div className='border-b my-2 border-gray-400'>
             <h3 className='font-bold flex items-center mb-2'>
               <span>
