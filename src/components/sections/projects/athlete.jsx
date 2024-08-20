@@ -19,12 +19,11 @@ function AthleteModal({show, setShow}) {
       <div className='min-h-[50vh] max-h-[90vh] py-4'>
         <h3 className='font-bold border-b border-gray-100 max-w-[90%] pb-1'>Antus Athlete App</h3>
         <p className='leading-7 mt-2 p-2'>
-          Antus is a progressive web application designed to meet the needs of people looking to improve their physical
-          health. Developed using Angular 10 and TypeScript and adorned with Bootstrap 5, it offers a seamless and
-          responsive user experience.
-          <br /> In fact, this application is an interface between the gym and the trainers of the gym, where athletes
-          can settle their accounts, use the facilities of the sport club, communicate with their trainers, and receive
-          training and meal plans.
+          Antus is a progressive web application designed and developed for sports trainers. This application is
+          developed using Reactjs and JavaScript and Bootstrap 5.
+          <br />
+          In fact, this application is an interface between athletes and trainers of the gym, where the trainers can
+          provide the training program and meal plan to the users.
         </p>
         {/* notic */}
         <div className='bg-gray-100 dark:bg-gray-800 rounded-md p-2 my-2'>

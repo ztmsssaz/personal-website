@@ -13,11 +13,11 @@ function Home() {
                 <button className='bg-lime-600  rounded-e-2xl rounded-t-2xl py-1 px-4 animate__animated animate__rotateInDownLeft animate__fast'>
                   Hello i'm
                 </button>
-                <h1 className='animate__animated animate__fadeInUp animate__fast'>Abolfazl zarei</h1>
+                <h1 className='animate__animated animate__fadeInUp animate__fast'>Abolfazl Zarei</h1>
                 <h3 className='animate__animated animate__fadeInUp animate__slow'>Frontend Developer</h3>
                 <div className='mt-3 animate__animated animate__fadeInUp animate__slow'>
                   <div className='pr-2 my-1 flex'>
-                    <Mail size='22' className='mr-1' color='#a3e635' />
+                    <Mail size='22' className='min-w-5 mr-1' color='#a3e635' />
                     <a href='mailto:' className='transition-all hover:text-lime-400'>
                       zarei.mrabolfazl@gmail.com
                     </a>
